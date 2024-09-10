@@ -136,22 +136,31 @@ export default function Navbar() {
 
 
 
-            
+
             <div className="absolute w-full bg-[#F0F0F0] flex justify-between top-[100px]  start-0 rounded-xl">
-              <div className="text-black">
-                <h2>نُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنا</h2>
+              <div className="w-1/3">
+                <div className="text-black">
+                  <h2>نُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنا</h2>
+                </div>
+
               </div>
-              <div>
-                <ul></ul>
-                <ul></ul>
+
+              <div className="w-2/3">
+
+                <div>
+                  <ul></ul>
+                  <ul></ul>
+                </div>
+
+
+
               </div>
-       
 
 
 
-          
 
-             
+
+
 
 
 
