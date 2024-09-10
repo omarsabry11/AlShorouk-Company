@@ -1,7 +1,12 @@
 import React from "react"
-import AlShorouk from "../../assets/imgs/Logos/AlShorouk.png"
+import AlShorouk from "../../assets/imgs/AlShroukLogo/AlShorouk.png"
 import { NavLink } from "react-router-dom"
-
+import prometeon from "../../assets/imgs/Logos/01-Prometeon.jpg"
+import pepsico from "../../assets/imgs/Logos/02-Pepsico.jpg"
+import mondlez from "../../assets/imgs/Logos/03-Mandelez.png"
+import total from "../../assets/imgs/Logos/04-Total.jpg"
+import coveris from "../../assets/imgs/Logos/05-Coveris.jpg"
+import egic from "../../assets/imgs/Logos/10-EGIC.jpg"
 
 export default function Navbar() {
   return (
@@ -25,6 +30,9 @@ export default function Navbar() {
           <ul className="text-white flex gap-5">
             <li>
               <a href="#about">عن الشركة</a>
+            </li>
+            <li>
+              <a href="#about">أعمالنا السابقة</a>
             </li>
 
             <li>
@@ -137,19 +145,88 @@ export default function Navbar() {
 
 
 
-            <div className="absolute w-full bg-[#F0F0F0] flex justify-between top-[100px]  start-0 rounded-xl">
+            {/* <div className="absolute w-full bg-white flex justify-between top-[100px] py-12  start-0 rounded-xl px-4">
               <div className="w-1/3">
                 <div className="text-black">
-                  <h2>نُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنا</h2>
+                  <h2>نُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنانُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنانُقدم لك لمحة عن مشاريعنا الناجحة، التي تُظهر التزامنا بتقديم خدمات عالية الجودة لشركائنا</h2>
                 </div>
 
               </div>
 
               <div className="w-2/3">
 
-                <div>
-                  <ul></ul>
-                  <ul></ul>
+                <div className="flex ">
+                  <div className=" w-1/2 px-5">
+                    <ul className="text-black flex flex-col gap-7">
+                      <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20 h-11">
+                            <img src={prometeon} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">Prometeon Tyre Group </p>
+                        </a>
+                      </li>
+                      <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20">
+                            <img src={pepsico} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">Pepsico FoodService</p>
+                        </a>
+                      </li>
+                      <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20">
+                            <img src={mondlez} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">Mondelez International</p>
+                        </a>
+                      </li>
+                      
+                      
+
+                    </ul>
+
+                  </div>
+                  <div className="w-1/2 px-5">
+                    <ul className="text-black flex flex-col gap-7">
+                    <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20 h-11">
+                            <img src={total} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">TotalEnergies</p>
+                        </a>
+                      </li>
+                      <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20">
+                            <img src={coveris} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">COVERIS</p>
+                        </a>
+                      </li>
+                      <li className="border-[3px] p-2 rounded-lg duration-300 hover:scale-105 text-[#002D62]">
+                        <a href="#" className="flex items-center justify-between">
+
+                          <div className="w-20">
+                            <img src={egic} alt="" />
+                          </div>
+                          <p className="text-[1.1rem] font-semibold">EGIC</p>
+                        </a>
+                      </li>
+                      
+
+                    </ul>
+
+                  </div>
+
+
                 </div>
 
 
@@ -170,7 +247,7 @@ export default function Navbar() {
 
 
 
-            </div>
+            </div> */}
 
 
 

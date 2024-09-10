@@ -37,6 +37,7 @@ export default function LandingPage() {
           <div className="text-white relative z-10 text-center font-semibold">
             <h1 className="text-8xl py-8 font-bold">شركة الشروق</h1>
             <h2 className="text-5xl mb-10">الاختيار الأمثل لأعمالك الكهروميكانيكية</h2>
+            {/* <h2>نحول رؤيتك إلى واقع بأعلى معايير الجودة والكفاءة.</h2> */}
             <button className="bg-[#F5E928] py-3 px-14 rounded-lg text-xl text-black font-bold">
               <a href="">أعمالنا السابقة</a>
             </button>
