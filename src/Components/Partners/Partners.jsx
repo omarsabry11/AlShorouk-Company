@@ -11,7 +11,7 @@ export default function Partners() {
   console.log(logos);
 
   return (
-    <div>
+    <div id="partners">
       <div className="w-[85%] mx-auto text-center font-cairo">
         <div className="flex justify-center items-center gap-4 ">
           <svg

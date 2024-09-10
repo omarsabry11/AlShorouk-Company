@@ -5,7 +5,7 @@ import AlShorouk from "../../assets/imgs/Logos/AlShorouk.png"
 export default function About() {
   return (
     <>
-      <div id="partners" className="py-20">
+      <div id="about" className="py-20">
         <div className="w-[85%] mx-auto">
           <h2 className="text-center font-semibold mb-14"><i class="fas fa-building fa-xl text-[red]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
 
