@@ -32,7 +32,7 @@ export default function Navbar() {
               <a href="#about">عن الشركة</a>
             </li>
             <li>
-              <a href="#about">أعمالنا السابقة</a>
+              <a href="#">أعمالنا السابقة</a>
             </li>
 
             <li>

@@ -11,6 +11,8 @@ export default function About() {
   return (
     <>
       {/* <div id="partners" className="py-20">
+
+
         <div className="w-[85%] mx-auto">
           <h2 className="text-center font-bold mb-14"><i class="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
 
@@ -37,9 +39,9 @@ export default function About() {
 
 
 
-      {<div id="partners" className="py-20">
+      <div id="about" className="py-20">
         <div className="w-[85%] mx-auto">
-          <h2 className="text-center font-bold mb-20"><i class="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
+          <h2 className="text-center font-bold mb-20"><i className="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
           <div className="flex">
 
             <div className="w-[40%] relative">
@@ -90,7 +92,7 @@ export default function About() {
 
 
         </div>
-      </div>}
+      </div>
 
 
     </>
