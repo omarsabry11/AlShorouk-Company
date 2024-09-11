@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-
 export default function Partners() {
   const logos = Object.values(
     import.meta.glob("/src/assets/imgs/Logos/*.{png,jpg,jpeg,PNG,JPEG,svg}", {
@@ -9,8 +8,6 @@ export default function Partners() {
       as: "url",
     })
   );
-  // const logos = []
-  console.log(logos);
 
   return (
     <div id="partners">
