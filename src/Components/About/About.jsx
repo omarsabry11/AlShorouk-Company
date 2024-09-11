@@ -4,10 +4,19 @@ import AlShorouk from "../../assets/imgs/AlShroukLogo/AlShorouk.png"
 import team from "../../assets/imgs/LandingPage/one.jpg"
 import { IoDiamondSharp } from "react-icons/io5";
 import { FaEye } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
+
 
 
 
 export default function About() {
+
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
   return (
     <>
       {/* <div id="partners" className="py-20">
@@ -39,12 +48,17 @@ export default function About() {
 
 
 
-      <div id="about" className="py-20">
+      <div id="about" className="py-20 overflow-x-hidden" ref={ref}>
         <div className="w-[85%] mx-auto">
           <h2 className="text-center font-bold mb-20"><i className="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
           <div className="flex">
 
-            <div className="w-[40%] relative">
+            <motion.div initial={{opacity:0,x:100}}
+             animate={inView ? {opacity:1,x:0}:{opacity:0,x:150}}
+             exit={{ opacity: 0, x: -150 }}
+             transition={{duration:0.7}}
+
+              className="w-[40%] relative">
               <div className="h-full">
                 <img src={team} className="rounded-xl w-full h-full" alt="" />
               </div>
@@ -60,9 +74,14 @@ export default function About() {
               </div>
 
 
-            </div>
+            </motion.div>
 
-            <div className="w-[60%] px-10">
+            <motion.div
+            initial={{opacity:0,x:-150}}
+            animate={inView ? {opacity:1,x:0}:{opacity:0,x:-150}}
+            exit={{ opacity: 0, x: -150 }}
+            transition={{duration:0.7}}
+             className="w-[60%] px-10">
               <div className="flex flex-col justify-between gap-11">
                 <div className="bg-gray-100 p-5 rounded-lg">
 
@@ -86,7 +105,7 @@ export default function About() {
 
               </div>
 
-            </div>
+            </motion.div>
 
           </div>
 

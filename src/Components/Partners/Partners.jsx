@@ -9,7 +9,7 @@ export default function Partners() {
       as: "url",
     })
   );
-  // const logos = []
+
   console.log(logos);
 
   return (

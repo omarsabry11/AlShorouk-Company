@@ -8,8 +8,9 @@ export default function Contact() {
     threshold: 0.2,
     triggerOnce: true,
   });
+  
   return (
-    <div id="contact" ref={ref}>
+    <div id="contact" className="overflow-hidden " ref={ref}>
       <div className="relative h-auto py-10">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -26,7 +27,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, x: 150 }}
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }}
-              exit={{ opacity: 0, x: -150 }}
+              
               transition={{ duration: 0.7 }}
               className="flex flex-col items-center justify-center gap-3 "
             >

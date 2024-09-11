@@ -21,6 +21,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
+
 .boxServices-title::before {
   content: "";
   position: absolute;
@@ -46,6 +47,6 @@ body {
 
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"); */
 
 

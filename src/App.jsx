@@ -14,6 +14,7 @@ import Footer from "./Components/Footer/Footer";
 
 
 import Partners from "./Components/Partners/Partners";
+import PreviousProjects from './Components/PreviousProjects/PreviousProjects';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
       <Navbar></Navbar>
       <LandingPage></LandingPage>
+      <PreviousProjects></PreviousProjects>
       <About></About>
 
       <Partners />

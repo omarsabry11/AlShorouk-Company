@@ -21,7 +21,7 @@ export default function LandingPage() {
       setBgImage(images[index]);
     };
 
-    const intervalId = setInterval(changeBackgroundImage, 4000);
+    const intervalId = setInterval(changeBackgroundImage, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -32,7 +32,7 @@ export default function LandingPage() {
         backgroundImage: bgImage,
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }} className="min-h-lvh landing bg-gray-200 duration-1000">
+      }} className="min-h-lvh landing bg-gray-200 duration-1000 overflow-x-hidden">
         <div className="min-h-lvh flex justify-center items-center">
           <div className="text-white relative z-10 text-center font-semibold">
             <h1 className="text-8xl py-8 font-bold">شركة الشروق</h1>
