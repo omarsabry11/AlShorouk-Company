@@ -34,27 +34,8 @@ body {
   height: 2px;
 }
 
-/* .boxServices-title::after
-{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -12px;
-    background-color: transparent;
-    width: 50%;
-    height: 10px;
-    border-top: #818385 1px solid;
-    border-bottom: #818385 1px solid;
-    
-
-} */
-
-
-
 .swiper {
   width: 90%;
-
   padding-bottom: 50px;
 }
 

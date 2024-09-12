@@ -56,7 +56,7 @@ export default function About() {
             <motion.div initial={{opacity:0,x:100}}
              animate={inView ? {opacity:1,x:0}:{opacity:0,x:150}}
              exit={{ opacity: 0, x: -150 }}
-             transition={{duration:0.7}}
+             transition={{duration:1}}
 
               className="w-[40%] relative">
               <div className="h-full">
@@ -80,7 +80,7 @@ export default function About() {
             initial={{opacity:0,x:-150}}
             animate={inView ? {opacity:1,x:0}:{opacity:0,x:-150}}
             exit={{ opacity: 0, x: -150 }}
-            transition={{duration:0.7}}
+            transition={{duration:1}}
              className="w-[60%] px-10">
               <div className="flex flex-col justify-between gap-11">
                 <div className="bg-gray-100 p-5 rounded-lg">

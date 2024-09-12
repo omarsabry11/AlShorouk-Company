@@ -10,12 +10,12 @@ import PreviousProjects from './Components/PreviousProjects/PreviousProjects';
 import TeamWork from "./Components/TeamWork/TeamWork";
 
 
-import { Swiper,SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import { Swiper,SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination } from 'swiper/modules';
+
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 
 
 
