@@ -8,7 +8,24 @@ export default function Contact() {
     threshold: 0.2,
     triggerOnce: true,
   });
-  
+
+  const sendEmail = () => {
+    const recipient = 'abdelrahmansabry515@gamil.com';
+    const subject = 'Subject of your email';
+    const body = 'Hello, I would like to get in touch!';
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+  };
+
+  const sendWhatsAppMessage = () => {
+    const phoneNumber = '+201550721259';
+    const message = 'Hello, I would like to get in touch!';
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
+  };
+
   return (
     <div id="contact" className="overflow-hidden pt-24" ref={ref}>
       <div className="relative h-auto py-10">
@@ -27,8 +44,8 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, x: 150 }}
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }}
-              
-              transition={{ duration: 0.7 }}
+
+              transition={{ duration: 1 }}
               className="flex flex-col items-center justify-center gap-3 "
             >
               <img src={logo} alt="شركة الشروق" className="w-28 " />
@@ -40,17 +57,28 @@ export default function Contact() {
               initial={{ opacity: 0, y: 150 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }}
               exit={{ opacity: 0, y: -150 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 1 }}
             >
-              <h5>اتصل بنا : </h5>
-              <div className="flex justify-center items-center ">
-                <i className="fa-solid fa-phone"></i>
-                <h6 className="p-2">+201550721259</h6>
+              
+              <div >
+                <h5 className="">البريد الالكتروني :</h5>
+                <div onClick={sendEmail} className="flex justify-center items-center cursor-pointer">
+                  <h6  className="p-2 ">abdelrahmansabry515@gamil.com</h6>
+                  <i className="fa-solid fa-envelope"></i>
+                </div>
+
               </div>
-              <div className="flex justify-center items-center ">
-                <i className="fa-solid fa-envelope"></i>
-                <h6 className="p-2">abdelrahmansabry515@gamil.com</h6>
+              <div>
+                <h5>اتصل بنا : </h5>
+                <div onClick={sendWhatsAppMessage} className="flex justify-center items-center cursor-pointer">
+                  <h6  className="p-2">201550721259+</h6>
+                  <i className="fa-solid fa-phone"></i>
+                </div>
+
               </div>
+
+
+
               <div className="flex justify-center items-center ">
                 <i className="fa-solid fa-location-dot"></i>
                 <h6 className="p-2"> الإسكندرية - مصر</h6>
@@ -72,7 +100,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: -150 }}
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -150 }}
               exit={{ opacity: 0, x: 150 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 1 }}
               className="flex flex-col justify-center items-center gap-3"
             >
               <h5>موقعنا على الخريطة:</h5>

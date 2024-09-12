@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import AlShorouk from "../../assets/imgs/AlShroukLogo/AlShorouk.png"
 import { NavLink } from "react-router-dom"
 import prometeon from "../../assets/imgs/Logos/01-Prometeon.jpg"
@@ -9,6 +9,15 @@ import coveris from "../../assets/imgs/Logos/05-Coveris.jpg"
 import egic from "../../assets/imgs/Logos/10-EGIC.jpg"
 
 export default function Navbar() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleBar = ()=>{
+    setIsOpen(!isOpen);
+  }
+
+  console.log(isOpen);
+  
+
   return (
     <>
 
@@ -27,7 +36,7 @@ export default function Navbar() {
 
           </div>
 
-          <ul className="text-white flex gap-5">
+          <ul className={`max-lg:hidden text-white flex gap-5 `}>
             <li>
               <a href="#about">عن الشركة</a>
             </li>
@@ -51,7 +60,44 @@ export default function Navbar() {
               <a href="#contact">تواصل معنا</a>
             </li>
 
-            {/* <div className="absolute w-full bg-[#F0F0F0] flex justify-between top-[100px]  start-0 rounded-xl">
+         
+
+
+
+
+          </ul>
+          <i onClick={toggleBar} className={`lg:hidden fa-solid fa-bars text-white`}></i>
+
+          {isOpen ? <ul className="text-white flex flex-col absolute bg-black  w-full top-full py-5 text-center rounded-b-xl gap-5">
+            <li onClick={toggleBar} className="border-b border-gray-400 pb-5">
+              <a href="#about">عن الشركة</a>
+            </li>
+            <li onClick={toggleBar} className="border-b border-gray-400 pb-5" >
+              <a href="#previousProjects">أعمالنا السابقة</a>
+            </li>
+
+           
+            <li onClick={toggleBar} className="border-b border-gray-400 pb-5">
+              <a href="#services">الخدمات</a>
+
+            </li>
+            <li onClick={toggleBar} className="border-b border-gray-400 pb-5" >
+              <a href="#teamWork">فريق العمل</a>
+            </li>
+            <li onClick={toggleBar} className="border-b border-gray-400 pb-5" >
+              <a href="#partners">شركاء النجاح</a>
+            </li>
+
+            <li onClick={toggleBar}  >
+              <a href="#contact">تواصل معنا</a>
+            </li>
+
+          </ul>:null}
+
+        </div>
+      </div>
+
+         {/* <div className="absolute w-full bg-[#F0F0F0] flex justify-between top-[100px]  start-0 rounded-xl">
               <div className="w-1/4 px-4">
                 <div className=" px-3 py-8 ">
                   <h3 className="boxServices-title relative mb-9 w-fit  text-lg  duration-300 text-[#002D62] cursor-pointer py-1  font-bold">أعمال التركيبات</h3>
@@ -136,12 +182,6 @@ export default function Navbar() {
 
 
             </div> */}
-
-
-
-
-
-
 
             {/* <div className="absolute w-full bg-white flex justify-between top-[100px] py-12  start-0 rounded-xl px-4">
               <div className="w-1/3">
@@ -249,14 +289,9 @@ export default function Navbar() {
 
 
 
-
-          </ul>
-
-        </div>
-      </div>
-
-
-
     </>
   )
 }
+
+
+

@@ -25,7 +25,7 @@ export default function TeamWork() {
           initial={{ opacity: 0, y: 150 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }}
           exit={{ opacity: 0, y: -150 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.9 }}
           className="w-[85%] mx-auto text-center font-cairo "
         >
           <div className="flex justify-center items-center gap-4 mb-20">

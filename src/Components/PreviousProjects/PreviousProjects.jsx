@@ -51,9 +51,47 @@ export default function PreviousProjects() {
     slidesToScroll: 1,
     autoplay: true,
   };
+
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  const projects = [
+    {
+      logo: prometeon,
+      title: `PROMETEON TYRE GROUP`,
+      desc: `شركة إيطالية رائدة في تصنيع إطارات الشاحنات والحافلات والمعدات الزراعية، تُعرف بجودتها العالية ومقاومتها للأضرار والتآكل. تُقدم بروميتيون مجموعة واسعة من الإطارات التي تناسب مختلف الاستخدامات والتضاريس.`,
+    },
+    {
+      logo: pepsico,
+      title: `PEPSICO`,
+      desc: `شركة عالمية رائدة في صناعة وتوزيع الأطعمة والمشروبات، تُركز على تقديم خدمات الطعام والمشروبات للقطاع المؤسسي مثل مطاعم الفنادق والمؤسسات وغيرها. تُقدم بيبسيكو مجموعة واسعة من المنتجات مثل البطاطس المقلية والمشروبات الغازية والمشروبات غير الغازية وغيرها من المنتجات الغذائية`,
+    },
+    {
+      logo: total,
+      title: `TotalEnergies `,
+      desc: `شركة فرنسية عالمية رائدة في مجال الطاقة، تُركز على استخراج وإنتاج وتوزيع النفط والغاز والتوسع في مجالات الطاقة الجديدة مثل الطاقة الشمسية وطاقة الرياح. تُقدم توتال حلولاً متكاملة لإدارة الطاقة والتقليل من انبعاثات الكربون`,
+    },
+    {
+      logo: mondlez,
+      title: `Mondelez International`,
+      desc: ` شركة عالمية رائدة في مجال صناعة المواد الغذائية، تُركز على إنتاج حلويات ووجبات خفيفة ومشروبات وغيرها من منتجات المواد الغذائية. تُقدم موندليز مجموعة واسعة من العلامات التجارية المشهورة عالمياً `,
+    },
+    {
+      logo: coveris,
+      title: `COVERIS`,
+      desc: ` شركة عالمية رائدة في مجال تصنيع وتعبئة المنتجات ، وتُركز على تقديم حلول عالية الأداء للتعبئة والتغليف للمواد الغذائية وغير الغذائية. تُقدم كوفيريس مجموعة واسعة من المنتجات والتقنيات لتلبي احتياجات مختلف القطاعات`,
+    },
+    {
+      logo: egic,
+      title: `EGIC`,
+      desc: ` الشركة الرائدة فى مجال تصنيع حلول التغذية والصرف الصحي , وتعد من أكبر الشركات التي تصنع أنظمة تغذية المياة وحلول الصرف من أنقي خامات البولي بروبلين والـ (يو بي في سي) والبولي إيثيلين في مصر والشرق الأوسط بقمة الجودة الألمانية.`,
+    },
+  ];
   return (
     <>
-      <div id="previousProjects" className="pt-24 overflow-x-hidden ">
+      <div id="previousProjects" className="pt-24 overflow-x-hidden" ref={ref}>
         <div className="w-[85%] mx-auto">
           <div className="flex justify-center items-center">
             <MdWorkspacePremium size={"35px"} className="me-2" />
@@ -137,11 +175,11 @@ export default function PreviousProjects() {
                 </div>
               </a>
             </div>
-            <div className="w-1/3 px-3 h-[450px]">
+            <div className="w-1/3 px-3  duration-300 hover:scale-[1.03]">
               <a href="">
                 <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full">
                   <div className=" border-gray-300 h-[200px]">
-                    <img src={pepsico} alt="" />
+                    <img src={pepsico} alt="" className="h-full w-full" />
                   </div>
                   <div className="py-2">
                     <h3 className="text-end py-2 font-bold ">
@@ -162,11 +200,11 @@ export default function PreviousProjects() {
                 </div>
               </a>
             </div>
-            <div className="w-1/3 px-3 h-[450px]">
+            <div className="w-1/3 px-3  duration-300 hover:scale-[1.03]">
               <a href="">
                 <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full">
                   <div className=" h-[200px]">
-                    <img src={total} alt="" />
+                    <img src={total} alt="" className="h-full w-full" />
                   </div>
                   <div className="py-2">
                     <h3 className="text-end py-2 font-bold ">
@@ -188,11 +226,15 @@ export default function PreviousProjects() {
                 </div>
               </a>
             </div>
-            <div className="w-1/3 px-3 h-[450px]">
+            <div className="w-1/3 px-3  duration-300 hover:scale-[1.03]">
               <a href="">
                 <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full">
                   <div className=" h-[200px]">
-                    <img src={mondlez} className="mx-auto py-3" alt="" />
+                    <img
+                      src={mondlez}
+                      className="h-full w-[80%] mx-auto"
+                      alt=""
+                    />
                   </div>
                   <div className="py-2">
                     <h3 className="text-end py-2 font-bold ">
@@ -214,11 +256,11 @@ export default function PreviousProjects() {
                 </div>
               </a>
             </div>
-            <div className="w-1/3 px-3 h-[450px]">
+            <div className="w-1/3 px-3  duration-300 hover:scale-[1.03]">
               <a href="">
                 <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full">
                   <div className=" h-[200px]">
-                    <img src={coveris} alt="" />
+                    <img src={coveris} alt="" className="h-full w-full" />
                   </div>
                   <div className="py-2">
                     <h3 className="text-end py-2 font-bold ">
@@ -238,11 +280,11 @@ export default function PreviousProjects() {
                 </div>
               </a>
             </div>
-            <div className="w-1/3 px-3 h-[450px]">
+            <div className="w-1/3 px-3  duration-300 hover:scale-[1.03]">
               <a href="">
                 <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full">
                   <div className=" h-[200px]">
-                    <img src={egic} alt="" />
+                    <img src={egic} alt="" className="h-full w-full" />
                   </div>
                   <div className="py-2">
                     <h3 className="text-end py-2 font-bold ">
