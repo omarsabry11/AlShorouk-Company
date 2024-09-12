@@ -9,11 +9,6 @@ export default function Partners() {
     })
   );
 
-
-  console.log(logos);
-
-
-
   return (
     <div id="partners" className="pt-24">
       <div className="w-[85%] mx-auto text-center font-cairo">
