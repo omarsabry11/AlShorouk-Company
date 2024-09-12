@@ -7,7 +7,8 @@ import { Grid, Pagination, Autoplay } from "swiper/modules";
 import "./Services.css";
 import { GrServices } from "react-icons/gr";
 import "swiper/css/autoplay";
-export default function App() {
+
+export default function Services() {
   const services = Object.values(
     import.meta.glob(
       "/src/assets/imgs/Services/*.{png,jpg,jpeg,PNG,JPEG,svg}",
