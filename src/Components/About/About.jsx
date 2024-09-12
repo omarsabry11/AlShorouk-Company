@@ -48,7 +48,7 @@ export default function About() {
 
 
 
-      <div id="about" className="py-20 overflow-x-hidden" ref={ref}>
+      <div id="about" className="pt-24 overflow-x-hidden" ref={ref}>
         <div className="w-[85%] mx-auto">
           <h2 className="text-center font-bold mb-20"><i className="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
           <div className="flex">

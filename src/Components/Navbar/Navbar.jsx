@@ -35,11 +35,9 @@ export default function Navbar() {
               <a href="#previousProjects">أعمالنا السابقة</a>
             </li>
 
-            <li>
-              <a href="#ourWorks">المشاريع</a>
-            </li>
+           
             <li className="relative">
-              <a href="#ourWorks">الخدمات</a>
+              <a href="#services">الخدمات</a>
 
             </li>
             <li>

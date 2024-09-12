@@ -10,7 +10,7 @@ export default function Contact() {
   });
   
   return (
-    <div id="contact" className="overflow-hidden " ref={ref}>
+    <div id="contact" className="overflow-hidden pt-24" ref={ref}>
       <div className="relative h-auto py-10">
         <div
           className="absolute inset-0 bg-cover bg-center"

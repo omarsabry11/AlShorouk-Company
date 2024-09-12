@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-
 export default function Partners() {
   const logos = Object.values(
     import.meta.glob("/src/assets/imgs/Logos/*.{png,jpg,jpeg,PNG,JPEG,svg}", {
@@ -10,10 +9,13 @@ export default function Partners() {
     })
   );
 
+
   console.log(logos);
 
+
+
   return (
-    <div id="partners">
+    <div id="partners" className="pt-24">
       <div className="w-[85%] mx-auto text-center font-cairo">
         <div className="flex justify-center items-center gap-4 ">
           <svg
