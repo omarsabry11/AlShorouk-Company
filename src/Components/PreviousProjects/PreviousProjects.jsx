@@ -241,7 +241,7 @@ export default function PreviousProjects() {
 
 
             {projects.map((project, index) =>
-              <div className="w-1/3 px-3 duration-300 hover:scale-[1.03] ">
+              <div className="w-1/3 max-sm:w-full max-lg:w-1/2 px-3 duration-300 hover:scale-[1.03] ">
                 <a href="">
                   <div className="border-[3px] border-gray-300 rounded-xl p-3 h-full ">
                     <div className=" border-gray-300 h-[200px]">
@@ -249,7 +249,7 @@ export default function PreviousProjects() {
                     </div>
                     <div className="py-2">
                       <h3 className="text-end py-2 font-bold "><span className="bg-blue-600 text-white px-2 ms-2 rounded-md">{index+1}</span><span className="text-lg tracking-wider">{project.title}</span></h3>
-                      <p className="font-semibold flex leading-7 "><i class="fa-solid fa-angle-left mt-2 me-1"></i><span className="">{project.desc}</span>  </p>
+                      <p className="font-semibold flex leading-7 "><i className="fa-solid fa-angle-left mt-2 me-1"></i><span className="">{project.desc}</span>  </p>
                     </div>
 
                   </div>

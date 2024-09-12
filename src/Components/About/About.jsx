@@ -49,16 +49,16 @@ export default function About() {
 
 
       <div id="about" className="pt-24 overflow-x-hidden" ref={ref}>
-        <div className="w-[85%] mx-auto">
+        <div className="w-[85%] mx-auto max-sm:w-[95%]">
           <h2 className="text-center font-bold mb-20"><i className="fas fa-building fa-xl text-[#00001C]"></i> <span className="text-3xl ms-2">عن الشركة</span></h2>
-          <div className="flex">
+          <div className="flex max-lg:flex-col max-lg:gap-10">
 
             <motion.div initial={{opacity:0,x:100}}
              animate={inView ? {opacity:1,x:0}:{opacity:0,x:150}}
              exit={{ opacity: 0, x: -150 }}
              transition={{duration:1}}
 
-              className="w-[40%] relative">
+              className="w-[40%] relative max-lg:w-full">
               <div className="h-full">
                 <img src={team} className="rounded-xl w-full h-full" alt="" />
               </div>
@@ -66,7 +66,7 @@ export default function About() {
               <div className="absolute top-0 start-0 left-0 h-full bg-[rgba(0,0,0,0.7)] text-white flex items-center rounded-xl">
                 <div className="w-[80%] mx-auto border bg-[rgba(0,0,0,0)] p-5 rounded-xl">
                   <h2 className="text-center text-3xl font-bold pb-5">من نحن </h2>
-                  <p className="tracking-wider text-center font-semibold leading-7">تأسست شركة الشروق منذ أكثر من 20 عامًا، واستطاعت على مر السنوات أن تُصبح واحدة من الشركات الرائدة في مجال الأعمال الكهروميكانيكية. نحن نُقدم حلولًا شاملة تغطي التصميم، التركيب، الصيانة، والتوريد، بهدف تحقيق أقصى درجات الجودة والموثوقية. بفضل فريقنا من المهندسين والفنيين المحترفين، نضمن تقديم خدمات ذات مستوى عالمي تلبي احتياجات عملائنا في مختلف القطاعات الصناعية والتجارية.</p>
+                  <p className="tracking-wider text-center font-semibold leading-7 line-clamp-6">تأسست شركة الشروق منذ أكثر من 20 عامًا، واستطاعت على مر السنوات أن تُصبح واحدة من الشركات الرائدة في مجال الأعمال الكهروميكانيكية. نحن نُقدم حلولًا شاملة تغطي التصميم، التركيب، الصيانة، والتوريد، بهدف تحقيق أقصى درجات الجودة والموثوقية. بفضل فريقنا من المهندسين والفنيين المحترفين، نضمن تقديم خدمات ذات مستوى عالمي تلبي احتياجات عملائنا في مختلف القطاعات الصناعية والتجارية.</p>
 
                 </div>
 
@@ -81,7 +81,7 @@ export default function About() {
             animate={inView ? {opacity:1,x:0}:{opacity:0,x:-150}}
             exit={{ opacity: 0, x: -150 }}
             transition={{duration:1}}
-             className="w-[60%] px-10">
+             className="w-[60%] px-10 max-lg:w-full max-lg:px-3">
               <div className="flex flex-col justify-between gap-11">
                 <div className="bg-gray-100 p-5 rounded-lg">
 
