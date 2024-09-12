@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -43,12 +42,9 @@ body {
   background-position: center;
   background-size: cover;
   width: calc(100% / 3);
-
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
 }
-
-
